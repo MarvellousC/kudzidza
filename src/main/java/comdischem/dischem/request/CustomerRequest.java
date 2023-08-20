@@ -1,8 +1,15 @@
 package comdischem.dischem.request;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 
+
+/*
+Round 2 let AllArgsConstructor and NoArgsConstructor fight..one Must Win MK12
+ */
+
+/*
+Did you test this on postman..did it accept the builder pattern
+ */
 @Getter
 @Setter
 @AllArgsConstructor

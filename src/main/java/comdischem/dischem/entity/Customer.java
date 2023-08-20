@@ -8,10 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
+
 @Getter
 @Setter
 @Entity
 @Builder
+/* you have conflicting stuff here
+ * NoArgsConstructor vs AllArgsConstructor -- Round 1 Fight
+ *
+ * */
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "customer")
@@ -36,6 +42,12 @@ public class Customer {
     @Column(name = "phone", length = 20)
     private String phone;
 
+    /*
+    * There you are fighting with the Framework
+    * Framework is returning everything and you are saying please ignore..No need this
+    * Read about the N+1 Issue on Data Jpa
+    *
+    *  */
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonIgnoreProperties("customer")
     private List<Order> orders = new ArrayList<>();
