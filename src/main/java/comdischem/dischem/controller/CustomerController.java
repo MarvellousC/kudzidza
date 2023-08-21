@@ -1,11 +1,11 @@
 package comdischem.dischem.controller;
 
 
-import comdischem.dischem.dto.CustomerDTO;
+import comdischem.dischem.utils.dto.CustomerDTO;
 import comdischem.dischem.entity.Customer;
 import comdischem.dischem.repository.CustomerRepository;
 import comdischem.dischem.repository.OrderRepository;
-import comdischem.dischem.request.CustomerRequest;
+import comdischem.dischem.utils.request.CustomerRequest;
 import comdischem.dischem.service.CustomerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

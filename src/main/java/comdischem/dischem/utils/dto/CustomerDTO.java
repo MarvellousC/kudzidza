@@ -1,4 +1,4 @@
-package comdischem.dischem.dto;
+package comdischem.dischem.utils.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;

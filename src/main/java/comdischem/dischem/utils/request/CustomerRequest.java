@@ -1,4 +1,4 @@
-package comdischem.dischem.request;
+package comdischem.dischem.utils.request;
 
 import lombok.*;
 

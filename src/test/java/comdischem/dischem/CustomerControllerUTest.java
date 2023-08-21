@@ -1,7 +1,7 @@
 package comdischem.dischem;
 
 import comdischem.dischem.controller.CustomerController;
-import comdischem.dischem.dto.CustomerDTO;
+import comdischem.dischem.utils.dto.CustomerDTO;
 import comdischem.dischem.service.CustomerService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
